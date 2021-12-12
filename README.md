@@ -1,5 +1,6 @@
 # Ejercicio_ValorFuturo
-En este ejercicio tendrás que calcular el valor futuro de una inversión con base en el valor presente de la inversión, el interés y el periodo. 
+En este ejercicio podras calcular el valor futuro de una inversión con base en el valor presente de la inversión, el interés y el periodo.
+
 ## Descripción
 El valor futuro de una inversión es justamente entender cuál va a ser el dinero en el futuro cuando acabe esta inversión o después de un cierto tiempo. Para esto lo puedes obtener si tienes el interés dado al periodo de esta inversión, el número de periodos a invertir y el valor presente, o cuánto vale el dinero al día de hoy. Esto se puede calcular con base en la siguiente fórmula:
 
@@ -11,10 +12,22 @@ Donde:
 - i = interés del periodo
 - n = total de periodos
 
-Como un ejemplo si una persona decide invertir 100 a una tasa del 1% por periodo por 10 periodos, entonces al final de los 10 periodos al final su inversión valdrá un total de 100*(1.01)^10=110.4
 
-## Siguientes pasos
-Usa algebra para despejar la fórmula y que igual puedas obtener calquiera de los valores (VP, i o n) dados los otros 3 valores. 
+## Como usarlo
+1. Lo primero que debes hacer es introducir los valores requeridos (valor presente, interes y numero de periodos), para calcular el valor futuro de la inversion en dichas condiciones.
+2. Luego tendras la oportunidad de cambiar alguno de los valores dados y calcular los demas valores dado este cambio, para lo cual deberar ingresar el cambio en la casilla de la variable que quieres cambiar.
+3. Debes escoger que valor  calcular en la lista desplegable, puedes escoger entre calcular el interes (i), el valor presente (vp) o el numero de periodos (n).
 
-## Bonus
-Investiga que es el interés convertido nominal y aplícalo en tu fórmula.
+Nota: recuerda que siempre debes haber ingresado 3 valores para poder calcular la variable que deseas.
+
+<img src="https://i.ibb.co/pWDdLtb/valor-futuro.png" alt="valor-futuro" >
+
+## Tecnologias Usadas
+Para llevar a cabo el proyecto se uso Html, css y javascript.
+
+## ir al proyecto
+ingresa al proyecto en el siguiente link: [Valor Futuro](https://61b6710229a9c1164f64d6e0--trusting-galileo-700037.netlify.app/)
+
+### Licencia
+frontend se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+
