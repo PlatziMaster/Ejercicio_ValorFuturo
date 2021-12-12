@@ -23,10 +23,10 @@ Nota: recuerda que siempre debes haber ingresado 3 valores para poder calcular l
 <img src="https://i.ibb.co/pWDdLtb/valor-futuro.png" alt="valor-futuro" >
 
 ## Tecnologias Usadas
-Para llevar a cabo el proyecto se uso Html, css y javascript. Podras consultar el codigo usado en el link del repositorio  [Valor Futuro](https://61ae217bb0af4c72739c948a--eloquent-cray-5db11d.netlify.app/)
+Para llevar a cabo el proyecto se uso Html, css y javascript.
 
 ## ir al proyecto
-[Random Walker](https://61ae217bb0af4c72739c948a--eloquent-cray-5db11d.netlify.app/)
+ingresa al proyecto en el siguiente link: [Valor Futuro](https://61b6710229a9c1164f64d6e0--trusting-galileo-700037.netlify.app/)
 
 ### Licencia
 frontend se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
