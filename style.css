@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: brown;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+section div {
+    margin-top: 25px;
+    justify-content: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+
+}
+section div label{
+    margin-right: 15px;
+}
+
+main  .result_vf {
+    background-color: rgb(111, 155, 10);
+    align-items: center;
+    width: 350px;
+    height: 80px;
+    border-radius: 30px;
+    
+}
+
+main  .result_vf input {
+    width: 130px;
+    margin-right: 15px;
+    
+}
+main  .result_vf label{
+    padding-left: 15px;
+}
+
+main .variables select {
+    margin-top: 25px;
+}

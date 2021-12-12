@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h2>VALOR FUTURO DE UNA INVERSION</h2>
+    </header>
+
+    <main>
+        <section class="Future_value_container">
+            <div>
+                <label for="present_value">Ingresa el valor presente de tu inversion (vp)</label>
+                <input type="number" name="present_value" id="present_value" onchange ="updateValues()" >
+            </div>
+            <div>
+                <label for="interest">Cual es el interes por periodo de esa inversion (i)</label>
+                <input type="number" name="interest" id="interest" onchange ="updateValues()">  %
+            </div>
+            <div>
+                <label for="period">Por cuantos periodos  deseas hacer la inversion (n)</label>
+                <input type="number" name="period" id="period" onchange ="updateValues()">
+            </div>
+            <button onclick="futureValue()">
+                Calcular valor futuro
+            </button>
+            <div class="result_vf">
+                <label for="future_value">El valor futuro de tu inversion sera de:</label>
+                <input type="number" name="future_value" id="future_value" onchange ="updateValues()">
+            </div>
+        </section>
+
+        <section class="variables">
+            <label for="findVariable"> Si deseas,  puedes despejar cualquier variable de la ecuacion de VF (VP , i% o n), solo debes cambiar el valor de tu preferencia y escoger cual valor quieres calcular a partir de ese cambio</label>
+            <select name="findVariable" id="findVariable" onclick="calculateVariables () "  onchange ="updateValues()"  >
+                <option value=" ">Elige una variable</option>
+                <option value="vp">Valor presente</option> 
+                <option value="i">Interes</option>
+                <option value="n">Numero de periodos</option>
+            </select>
+            <div class="result_variables">
+                <p id="variable_label"></p>
+            </div>
+        </section>  
+    </main>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
