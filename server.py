@@ -1,9 +1,9 @@
 # Python 3 server example
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import time
+from os import environ
 
 hostName = "localhost"
-serverPort = 8080
+serverPort = environ['PORT']
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -25,7 +25,7 @@ class MyServer(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":        
-    webServer = HTTPServer((hostName, serverPort), MyServer)
+    webServer = HTTPServer((hostName), MyServer)
     print("Server started http://%s:%s" % (hostName, serverPort))
 
     try:
