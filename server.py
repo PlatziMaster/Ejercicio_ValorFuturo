@@ -2,7 +2,14 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 hostName = "localhost"
-serverPort = 8080
+import os
+ON_HEROKU = os.environ.get('ON_HEROKU')
+
+if ON_HEROKU:
+    # get the heroku port
+    serverPort = int(os.environ.get('PORT', 17995))  # as per OP comments default is 17995
+else:
+    serverPort = 3000
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -18,6 +25,7 @@ class MyServer(BaseHTTPRequestHandler):
             self.send_response(404)
 
         self.end_headers()
+        self.wfile.write(bytes(file_to_open, 'utf-8'))
 
     
 
