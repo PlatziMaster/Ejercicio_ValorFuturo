@@ -1,1 +1,1 @@
-web: python server.py runserver 0.0.0.0:$PORT
+web: python server.py  --host=0.0.0.0 --port=${PORT:-5000}
