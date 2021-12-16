@@ -7,8 +7,11 @@ The basic principle behind the time value of money is simple: One dollar today i
 <img src="static/future_value.png" width="300px"/> 
 
 FV = Future Value
+
 PV = Present Value
+
 r = Interest rate
+
 n = number of periods
 
 
