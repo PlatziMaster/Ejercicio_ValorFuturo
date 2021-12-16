@@ -1,20 +1,43 @@
-# Ejercicio_ValorFuturo
-En este ejercicio tendrás que calcular el valor futuro de una inversión con base en el valor presente de la inversión, el interés y el periodo. 
-## Descripción
-El valor futuro de una inversión es justamente entender cuál va a ser el dinero en el futuro cuando acabe esta inversión o después de un cierto tiempo. Para esto lo puedes obtener si tienes el interés dado al periodo de esta inversión, el número de periodos a invertir y el valor presente, o cuánto vale el dinero al día de hoy. Esto se puede calcular con base en la siguiente fórmula:
+# Future Value
+A calculator which helps you to calculate how many value your invested will have, created with python, javascript and made with love ♥ 
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20VF%3DVP%281&plus;i%29%5En " /> 
+## usage
+The basic principle behind the time value of money is simple: One dollar today is worth more than one dollar you will receive in the future. This is because you can invest the dollar you have today, and it can grow over time at a rate of return, or interest. The dollar that you receive “tomorrow” can’t be invested today, and therefore doesn’t have the same potential to increase in value
 
-Donde:
-- VF = Valor Futuro
-- VP = Valor presente
-- i = interés del periodo
-- n = total de periodos
+<img src="static/future_value.png" width="300px"/> 
 
-Como un ejemplo si una persona decide invertir 100 a una tasa del 1% por periodo por 10 periodos, entonces al final de los 10 periodos al final su inversión valdrá un total de 100*(1.01)^10=110.4
+FV = Future Value
 
-## Siguientes pasos
-Usa algebra para despejar la fórmula y que igual puedas obtener calquiera de los valores (VP, i o n) dados los otros 3 valores. 
+PV = Present Value
 
-## Bonus
-Investiga que es el interés convertido nominal y aplícalo en tu fórmula.
+r = Interest rate
+
+n = number of periods
+
+## Live demo
+You can try the [demo on this link](https://enigmatic-cliffs-29959.herokuapp.com/)
+
+## how to install 
+
+1. Install  [Python 3](https://www.python.org/downloads/).
+2. Install virtual enviroment with:
+
+    [`virtualenv venv`](#code).
+
+3. Start the virtual enviroment with:
+
+    [`source venv/bin/activate`](#code).
+
+4. Install Flask and gunicorn libraries
+
+    [`pip install fastapi uvicorn`](#code).
+
+ Also you can install by the requirements txt
+
+5. Run the server with
+
+    [`flask run`](#code).
+
+6. How to deploy in Heroku
+
+    you can read the following steps for deploy on heroku  [on this link ](https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3-es)
