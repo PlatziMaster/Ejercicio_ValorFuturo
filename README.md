@@ -14,9 +14,8 @@ r = Interest rate
 
 n = number of periods
 
-
+## Live demo
 You can try the [demo on this link](https://enigmatic-cliffs-29959.herokuapp.com/)
-
 
 ## how to install 
 
