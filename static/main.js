@@ -13,13 +13,17 @@
     //depend of the option, we enable/disable the inputs
     switch(option){
         case "1":
+            //this will help us to clean all our inputs
             document.querySelectorAll('.formula_value').forEach(element => {
                 element.removeAttribute("disabled");
             });
+
+            //then we can disabled the input we want to calculate
             active_input = document.getElementById('present_value')
             active_input.setAttribute("disabled", "true");
             active_input.focus();
 
+            //inserting the correct image of our calculation
             document.getElementById('img_formula').setAttribute("src","/static/present_value.png")
             
         break;
